@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dani & Nael - Nosso Casamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section com SVG de fundo -->
+    <section class="hero" onclick="scrollToSection('detalhes')" style="cursor: pointer;">
+        <div class="hero-overlay"></div>
+        <img src="img/Aba_principal.svg" alt="Convite de Casamento" class="hero-svg">
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Contador Regressivo -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="section-title">Contagem Regressiva</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section class="our-story" id="historia">
+        <div class="container">
+            <h2 class="section-title">Nossa História</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Primeiro Encontro</h3>
+                        <p class="timeline-date">Janeiro 2020</p>
+                        <p>Foi amor à primeira vista quando nos encontramos naquele café aconchegante...</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>O Pedido</h3>
+                        <p class="timeline-date">Dezembro 2023</p>
+                        <p>Um momento mágico sob as estrelas que mudou nossas vidas para sempre...</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>O Grande Dia</h3>
+                        <p class="timeline-date">Junho 2024</p>
+                        <p>E agora, estamos prontos para começar nossa jornada juntos...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes do Evento -->
+    <section class="event-details" id="detalhes">
+        <div class="container">
+            <h2 class="section-title">Detalhes do Evento</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">📍</div>
+                    <h3>Cerimônia</h3>
+                    <p class="detail-location">Igreja Pentecostal Assembléia dos Santos</p>
+                    <p class="detail-address">Rua do Armistício, 261<br>Bangu - Rio de Janeiro</p>
+                    <p class="detail-time">16:00h</p>
+                    <a href="https://www.google.com/maps/place/Igreja+Pentecostal+Assembl%C3%A9ia+dos+Santos/@-22.8915269,-43.4819033,20z/data=!4m6!3m5!1s0x9bdf3625ba6b21:0x43803ec0ce511da3!8m2!3d-22.8915929!4d-43.4818275!16s%2Fg%2F11frd7lt0g?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                        class="detail-link" target="_blank">Ver no Mapa</a>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">🎉</div>
+                    <h3>Recepção</h3>
+                    <p class="detail-location">Espaço Casa da Dani</p>
+                    <p class="detail-address">Rua Silvio Valê, 22<br>Gradim, São Gonçalo</p>
+                    <p class="detail-time">18:00h</p>
+                    <a href="https://www.google.com/maps/place/R.+Silvio+Val%C3%AA,+22+-+Gradim,+S%C3%A3o+Gon%C3%A7alo+-+RJ,+24430-660/@-22.8226299,-43.0831284,19z/data=!3m1!4b1!4m6!3m5!1s0x999b6a1e5c411b:0xc3db0bebc0d734bd!8m2!3d-22.8226311!4d-43.0824847!16s%2Fg%2F11j8sw7pl_?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                        class="detail-link" target="_blank">Ver no Mapa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Momentos Especiais</h2>
+            <div class="gallery-grid">
+                <!-- As fotos serão adicionadas aqui -->
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Foto 1</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Foto 2</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Foto 3</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Foto 4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmação de Presença -->
+    <section class="rsvp" id="confirmar">
+        <div class="container">
+            <h2 class="section-title">Confirme sua Presença</h2>
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Seu Nome Completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Seu Telefone" required>
+                </div>
+                <div class="form-group">
+                    <select id="guests" required>
+                        <option value="">Número de Convidados</option>
+                        <option value="1">1 pessoa</option>
+                        <option value="2">2 pessoas</option>
+                        <option value="3">3 pessoas</option>
+                        <option value="4">4 pessoas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Deixe uma mensagem especial para os noivos" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Confirmar Presença</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Lista de Presentes -->
+    <section class="gifts" id="presentes">
+        <div class="container">
+            <h2 class="section-title">Lista de Presentes</h2>
+            <p class="gifts-intro">Sua presença é o nosso maior presente, mas se desejar nos presentear, ficaremos muito
+                felizes!</p>
+            <div class="gifts-options">
+                <a href="#" class="gift-card">
+                    <div class="gift-icon">🎁</div>
+                    <h3>Loja 1</h3>
+                    <p>Ver Lista</p>
+                </a>
+                <a href="#" class="gift-card">
+                    <div class="gift-icon">🎁</div>
+                    <h3>Loja 2</h3>
+                    <p>Ver Lista</p>
+                </a>
+                <a href="#" class="gift-card">
+                    <div class="gift-icon">💰</div>
+                    <h3>PIX</h3>
+                    <p>Contribuir</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Feito com ❤️ para Dani & Nael</p>
+            <p class="footer-date">15.06.2024</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
